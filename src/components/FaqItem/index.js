@@ -28,9 +28,9 @@ class FaqItem extends Component {
     return (
       <>
         {isPlusButtonClicked ? (
-          <li className="faq-container">
-            <div>
-              <p>{questionText}</p>
+          <li className="faq-ans-container">
+            <div className="minus-container">
+              <h1>{questionText}</h1>
               <button type="button" onClick={this.showFaqQuestion}>
                 <img
                   src="https://assets.ccbp.in/frontend/react-js/faqs-minus-icon-img.png"
@@ -39,12 +39,12 @@ class FaqItem extends Component {
                 />
               </button>
             </div>
-            <hr />
-            <p>{answerText}</p>
+            <hr className="ans-qns-separator" />
+            <p className="answer-text">{answerText}</p>
           </li>
         ) : (
           <li className="faq-container">
-            <p>{questionText}</p>
+            <h1>{questionText}</h1>
             <button type="button" onClick={this.showFaqAnswer}>
               <img
                 src="https://assets.ccbp.in/frontend/react-js/faqs-plus-icon-img.png"
