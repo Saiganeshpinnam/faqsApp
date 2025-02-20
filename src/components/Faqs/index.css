@@ -2,7 +2,6 @@
 
 .faqs-bg-container {
   background-color: #f1f5f8;
-  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -11,17 +10,18 @@
 }
 .faqs-card-container {
   background-color: #ffffff;
-  height: 90vh;
+  height: 90%;
   width: 90vw;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 .faqs-heading {
   color: #cb8805;
-  font-size: 35px;
+  font-size: 32px;
   font-family: 'Roboto';
   text-align: center;
 }
